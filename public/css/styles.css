@@ -46,6 +46,120 @@ header a {
     flex-grow: 1;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+    justify-items: center;
+    align-items: center;
+}
+
+.location-container {
+    margin-top: 64px;
+    display: grid;
+    grid-template-rows: 20px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.bordered-grid-item {
+    border: 1px #cccccc solid;
+    width: 100%;
+    height: 100%;
+    
+  }
+.location-text {
+    text-align: center;
+}
+
+.current_temp {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    
+}
+
+.label-text {
+    font-size: small;
+    padding: 16px;
+}
+
+.current_temp_text {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.feels_like {
+    grid-row:3/4;
+    grid-column: 1/3;
+}
+
+.feels_like_text {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    font-size: small;
+    padding: 16px;
+}
+
+.humidity {
+    grid-row:5/6;
+    grid-column: 1/3;
+}
+
+.humidity_text {
+    grid-row: 6/7;
+    grid-column: 1/3;
+    font-size: small;
+    padding: 16px;
+}
+
+.weather-icon-container {
+    grid-row: 2/6;
+    grid-column: 3/5;
+    width: 70%;
+    height: 70%;
+}
+
+.weather-conditions-text {
+   grid-row: 6/7;
+   grid-column: 3/5;
+   font-size: large;
+}
+
+.wind-speed {
+    grid-row: 1/2;
+    grid-column: 5/7;
+}
+
+.wind-speed-text {
+    grid-row: 2/3;
+    grid-column: 5/7;
+}
+
+.precipitation {
+    grid-row: 3/4;
+    grid-column: 5/7;
+}
+
+.precipitation-text {
+    grid-row: 4/5;
+    grid-column: 5/7;
+}
+
+.visibility {
+    grid-row: 5/6;
+    grid-column: 5/7;
+}
+
+.visibility-text {
+    grid-row: 6/7;
+    grid-column: 5/7;
+}
+
+.temp-text {
+    font-size: large;
+}
+
 input {
     border: 1px solid #cccccc;
     padding: 8px;
