@@ -72,7 +72,13 @@ app.get('/weather', (req, res) => {
             }
             res.send({
                 location: place_name,
-                weather: data
+                current_temp: data.current_temperature,
+                feels_like_temp: data.feels_like,
+                description: data.description[0],
+                humidity: data.humidity,
+                precip: data.precip,
+                wind_speed: data.wind_speed,
+                visibility: data.visibility
             })
         })
     })
@@ -111,3 +117,11 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
     console.log('Server is up on port ' + PORT)
 })
+
+/*
+    add toggle for units 
+    make icon depend on weather condition
+    make spinning loading animation
+    fix error message
+    choose a naming convention and follow it
+*/
