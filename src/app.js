@@ -124,4 +124,5 @@ app.listen(PORT, () => {
     make spinning loading animation
     fix error message
     choose a naming convention and follow it
+    implement data cashing once an hour
 */
